@@ -1,1 +1,2 @@
-# Platzi
+# Cursos_Platzi
+Cursos Platizi
