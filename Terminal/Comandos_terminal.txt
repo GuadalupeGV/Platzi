@@ -1,0 +1,32 @@
+Curso
+
+Comando aprendidos
+Moverse
+cd .. -----------------------------moverse a anterior linea
+cd nombre_carpeta------------------moverse a carpeta anterior
+cd 
+
+ls---------------------------------lista de archivos
+ls -l -----------------------------lista de archivos en lista
+ls -a------------------------------Ver todos los arhivoc/ocultos
+
+Carpetas
+mkdir nombre_carpeta ---------------crear Carpetas
+rm nombre_carpeta-------------------eliminar Carpetas
+
+
+
+Documentos
+touch nombre_archivo.extensión ---- crear archivo 
+cat nombre_archivo.extensión--------ver contenido de archivo
+rm nombre_archivo.extensión---------Eliminar archivos
+vim nombre_archivo.extensión--------Editar en vim
+code nombre_archivo.extensión-------Editar en code
+
+Flujo de precesos
+nombre_comando < nombre_archivo.extensión--- Redirecciona la entrade de un comando con el contenido del arhivoc
+nombre_comando > nombre_archivo.extensión--- Redirecciona la salidad de un comando reescribiendolo
+nombre_comando >> nombre_archivo.extensión---Redirecciona la salida de un comando, agregando al final el contenido del comando
+
+comando| more -------------------------------Muestra el resultado largo d eun comando en secciones
+comando| wc----------------------------------Muestra en el resultado de un comando cuantos caracteres hay, agregar -l cuenta las lineas
