@@ -23,10 +23,99 @@ rm nombre_archivo.extensión---------Eliminar archivos
 vim nombre_archivo.extensión--------Editar en vim
 code nombre_archivo.extensión-------Editar en code
 
-Flujo de precesos
+Flujo de procesos
 nombre_comando < nombre_archivo.extensión--- Redirecciona la entrade de un comando con el contenido del arhivoc
 nombre_comando > nombre_archivo.extensión--- Redirecciona la salidad de un comando reescribiendolo
 nombre_comando >> nombre_archivo.extensión---Redirecciona la salida de un comando, agregando al final el contenido del comando
 
 comando| more -------------------------------Muestra el resultado largo d eun comando en secciones
 comando| wc----------------------------------Muestra en el resultado de un comando cuantos caracteres hay, agregar -l cuenta las lineas
+
+ps--- ver programas ejecutandose
+ps ax mas informacion
+
+Detener programas
+° ctr detener comando ejecutado
+kill -9 #Programa ejecutandose
+killall -numero_prioridad nombre ejecutable
+
+
+
+instalar paquetes
+
+paquete binario/ejecutable
+apt-- distribución ubutu
+
+sudo apt-get update
+sudo apt install lynux
+
+instalar paquete lenguaje
+pip --- phython
+composer -php   
+
+sudo apt install phython3-pip
+sudo apt install phython3-pandas
+
+
+Comandos Linux .. comprimir archivos
+gzip nombre_archivo ---- comprime el archivo nombre_archivo
+gzip -d nombre_archivo---Descomprime el archivo nombre_archivo
+tar cf nuevo_archivo.tar archivos/*--- Agrupa todos los archivcos que están en el directorio archivos en un solo archivo nuevo_archivo.tar
+tar tf nombre_archivo.tar --muestra el contenido dentro del arhivo nombre_archivo
+tar xf nombre_archivo.tar---Desagrupa el contenido dentro del arhivo nombre_archivo.tar
+tar cfz nuevo_archivo.tgz archivos/* ---- Agrupa todos los archivos que están el directorio archivos en un solo archivo nuevo_archivo.tgz y los comprime
+tar xzf nombre_archivo.tgz Desagrupa el contenido de archivo nombre_archivo.tgz y los Descomprime
+
+
+Localizar archivos
+LOCATE
+Busqueda en todo el sistema de archivos
+Ojo: Para ello debe tener la BD actualizada
+tienes que usar: sudo updatedb
+*se demorara bastante la primera vez, ojo con ese
+detalle.
+Ejemplo: locate prueba.txt
+locate -c <archivo> [Mostrara el conteo de los
+archivos]
+WHEREIS
+Para buscar archivos binarios (Osea Comandos)
+Ej: whereis echo
+echo: /bin/echo /usr/share/man/man1/echo.1.gz
+/bin/echo -> la primera ruta encontrada
+/usr/share/man/man1/echo.1.gz ->la segunda ruta
+encontrada
+FIND
+Busqueda compleja segun una serie de criterios
+nd /ruta -name “archivo*”
+[buscara todos los archivos que comiencen con el
+nombre archivo]
+nd . -user <nombreusuario> -perm XXX
+[. el punto es directorio actual]
+[-user nombre del usuario a que pertenece]
+[-perm = Permisos XXX puede ser 777 644 etc]
+nd . -name <archivo> -delete
+[. el punto es directorio actual]
+[-delete ->Eliminara el archivo encontrado]
+
+Interacción a travéz de HTTP
+Intercambio de texto entre Termianl y https
+
+Comandos
+curl --- hacer pedidos crudos,se le hace la solicitud al servidor se devuelve una respuesta por https
+y eso es lo que se muestra en pantalla
+sudo apt install curl
+curl https://www.platzi.com
+
+wget es más complejo redirecciona descargas también desde el servidor https:
+curl https://.php.net /distributions/php -73
+
+Llaves seguridad ssh
+en cada latpop se crea la llave privada y publica
+1.- ssh-keygen -t rsa -b 4096 -C "correo"
+2.- ssh-add -/.ssh-add -/.ssh/id_rsa
+listo
+
+la llave que se comparte es la publica
+
+
+
