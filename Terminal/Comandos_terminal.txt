@@ -85,6 +85,7 @@ echo: /bin/echo /usr/share/man/man1/echo.1.gz
 /usr/share/man/man1/echo.1.gz ->la segunda ruta
 encontrada
 FIND
+
 Busqueda compleja segun una serie de criterios
 nd /ruta -name “archivo*”
 [buscara todos los archivos que comiencen con el
@@ -96,6 +97,9 @@ nd . -user <nombreusuario> -perm XXX
 nd . -name <archivo> -delete
 [. el punto es directorio actual]
 [-delete ->Eliminara el archivo encontrado]
+
+\Program Files\MySQL\MySQL Server 8.0\bi
+
 
 Interacción a travéz de HTTP
 Intercambio de texto entre Termianl y https
@@ -119,3 +123,5 @@ la llave que se comparte es la publica
 
 
 
+C:\Program Files\MySQL\MySQL Server 8.0\bin
+\c
